@@ -44,3 +44,6 @@ r = "(([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6}),?\s?)+"
 print(re.search(r,s))
 
 
+s = "ADA 123"
+r = "[A-HJ-PR-UW-Z]{3} ? \d{2}(\d|[A-HJ-PR-UW-Z])"		#Äkta svensk regplåt.
+print(re.search(r,s))
